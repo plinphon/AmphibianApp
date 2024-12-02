@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.bookshelfapp"
+    namespace = "com.example.amphibian"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.bookshelfapp"
+        applicationId = "com.example.amphibian"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -48,7 +48,7 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.retrofit.converter.gson)
     implementation(libs.okhttp.logging.interceptor)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

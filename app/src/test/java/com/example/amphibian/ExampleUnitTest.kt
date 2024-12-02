@@ -1,4 +1,4 @@
-package com.example.artgalleryapp
+package com.example.amphibian
 
 import org.junit.Test
 

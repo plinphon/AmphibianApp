@@ -1,4 +1,4 @@
-package com.example.artgalleryapp.ui.theme
+package com.example.amphibian.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

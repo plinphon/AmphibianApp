@@ -1,4 +1,4 @@
-package com.example.bookshelfapp.ui
+package com.example.amphibian.ui
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -14,26 +14,26 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.bookshelfapp.R
-import com.example.bookshelfapp.ui.screen.BookViewModel
-import com.example.bookshelfapp.ui.screen.HomeScreen
+import com.example.amphibian.R
+import com.example.amphibian.ui.screen.AmphibianViewModel
+import com.example.amphibian.ui.screen.HomeScreen
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun BookShelfApp() {
+fun AmphibianApp() {
     val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
     Scaffold(
         modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
-        topBar = { BookTopAppBar(scrollBehavior = scrollBehavior) }
+        topBar = { AmphibianTopAppBar(scrollBehavior = scrollBehavior) }
     ) {
         Surface(
             modifier = Modifier.fillMaxSize()
         ) {
-            val bookViewModel: BookViewModel = viewModel(factory = BookViewModel.factory)
+            val amphibianViewModel: AmphibianViewModel = viewModel(factory = AmphibianViewModel.factory)
             HomeScreen(
-                bookUiState = bookViewModel.bookUiState,
+                amphibianUiState = amphibianViewModel.amphibianUiState,
                 contentPadding = it,
-                retryAction = { bookViewModel.getBooks("defaultQuery") }
+                retryAction = { amphibianViewModel.getAmphibians() }
             )
         }
     }
@@ -41,7 +41,7 @@ fun BookShelfApp() {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun BookTopAppBar(scrollBehavior: TopAppBarScrollBehavior, modifier: Modifier = Modifier) {
+fun AmphibianTopAppBar(scrollBehavior: TopAppBarScrollBehavior, modifier: Modifier = Modifier) {
     CenterAlignedTopAppBar(
         scrollBehavior = scrollBehavior,
         title = {

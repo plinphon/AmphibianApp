@@ -1,4 +1,4 @@
-package com.example.artgalleryapp.ui.theme
+package com.example.amphibian.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

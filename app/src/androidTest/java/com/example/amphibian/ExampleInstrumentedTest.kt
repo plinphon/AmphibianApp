@@ -1,4 +1,4 @@
-package com.example.artgalleryapp
+package com.example.amphibian
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

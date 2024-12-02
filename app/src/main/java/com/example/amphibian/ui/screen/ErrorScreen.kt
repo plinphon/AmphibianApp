@@ -1,4 +1,4 @@
-package com.example.artgalleryapp.ui.screen
+package com.example.amphibian.ui.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -12,8 +12,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.dimensionResource
-import com.example.bookshelfapp.R
-
+import com.example.amphibian.R
 
 
 @Composable

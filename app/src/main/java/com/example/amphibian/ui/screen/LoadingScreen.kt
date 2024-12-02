@@ -1,4 +1,4 @@
-package com.example.artgalleryapp.ui.screen
+package com.example.amphibian.ui.screen
 
 import androidx.compose.ui.res.painterResource
 import androidx.compose.foundation.layout.size
@@ -6,9 +6,9 @@ import androidx.compose.foundation.Image
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.res.stringResource
-import com.example.bookshelfapp.R
+import com.example.amphibian.R
+
 
 @Composable
 fun LoadingScreen(modifier: Modifier = Modifier) {
